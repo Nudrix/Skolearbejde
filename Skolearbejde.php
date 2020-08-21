@@ -112,10 +112,13 @@
     <hr>
 
     <?php
+        // Laver en defination som hedder alder=18
     $alder = 18;
+        // Alder == 18 (Om alderen er 18, hvis den er udskrives Alderen er 18)
     if ($alder == 18) {
         echo "Alderen er 18 år";
     }
+    // Hvis ikke udskrives alderen er ikke 18år
     else {
         echo "Alderen er ikke 18 år";
     }
