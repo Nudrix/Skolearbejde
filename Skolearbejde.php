@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skolearbejde</title>
 </head>
 <body>
     <?php
@@ -122,8 +122,112 @@
     else {
         echo "Alderen er ikke 18 år";
     }
+?>
 
+   <hr>
+    <?php
+    // Generere tilfældigt tal mellem 1 og 6
+    $tal= rand(1,6);
+    // Laver switch, hvor hver "Case" er Nummer 1 til 6 og printer det ud i romer tal
+    switch ($tal)
+    {
+      case 1:
+       echo "I";
+        break;
+      case 2:
+        echo "II";
+        break;
+      case 3:
+        echo "III";
+        break;
+      case 4:
+        echo "IV";
+      break;
+      case 5:
+        echo "V";
+        break;
+      case 6:
+        echo "VI";
+      break;
+    break;
+    }
+    ?>
+    <hr>
+
+    <?php
+    // Giver de forskellige ting værdier
+    $maks= 10;
+    $i= 1;
+    $sum= 0;
+    //Mens (i er mindre end max fortsæt da i til max)
+    while ($i < $maks)
+            do {
+        //Udskriv i (Indtil den når max værdi) og breakline
+        echo $i, "<br>";
+        // Sum (som er værdi 0) skal plusses med værdi i (som er 1 op til max )
+        $sum += $i;
+        //I++ = i + 1
+        $i++;
+    }
+    //Mens i er mindre end 20, fortsæt
+    while ($i <= 12);
+    // Udskriv total sum 
+    echo $sum;
+    ?>
+    <hr>
+
+
+
+
+
+
+    <?php
+$i = 1;
+do{
+    $i++;
+    echo "The number is " . $i . "<br>";
+}
+while($i <= 3);
+?>
+<hr>
+
+
+<?php
+$colors = array("Red", "Green", "Blue");
+ 
+// Loop through colors array
+foreach($colors as $value){
+    echo $value . "<br>";
+}
+?>
+<hr>
+<?php
+    // Giver de forskellige ting værdier
+    $maks= 3;
+    $i= 1;
+    $sum= 0;
+    //Mens (i er mindre end max fortsæt da i til max)
+    while ($i < $maks)
+            do {
+        //Udskriv i (Indtil den når max værdi) og breakline
+        echo $i, "<br>";
+        // Sum (som er værdi 0) skal plusses med værdi i (som er 1 op til max )
+        $sum += $i;
+        //I++ = i + 1
+        $i++;
+    }
+    //Mens i er mindre end 20, fortsæt
+    while ($i <= 4);
+    // Udskriv total sum 
+    echo $sum;
     ?>
 
-</body>
+    <hr>
+
+    <?php
+for ($x = 0; $x <= 10; $x++) {
+  echo "The number is: $x <br>";
+}
+?>
+    </body>
 </html>
