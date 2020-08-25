@@ -7,33 +7,37 @@
 </head>
 <body>
     <?php
+    // Dag 1: Opgave 1 ; Variabler
     $myVar = 17;
     echo $myVar, "<br>";
     $myVar = 2;
     echo $myVar;
     echo "<hr>";
-    //Navn
+    //Dag 1: Opgave 2 ; Variabler videre
     $myName = "Mathias";
     echo $myName, "<BR>";
     //Fuldt navn
    $myName = "Mathias Brøndvig";
     echo $myName, "<BR>";
 
+    // Dag 1: Opgave 3 ; Operatorer
     $var1 = 17;
     $var2 = 9;
     $var3 = $var1 + $var2;
     echo $var3, "<br>";
 
+    //Dag 1: Opgave 4 del 1 ; Strings
     $var1 = "husk";
     $var2 = "at";
     echo $var1. $var2, "<br>";
     echo "<hr>";
-
+    
+    //Dag 1: Opgave 5 ; Strings del2
     $minby = "Brenderup";
     echo strlen($minby), "<br>";
     echo "<hr>";
     
-    
+    // Dag 1: Opgave 6 ; Hvad udskriver følgende kode
     // Du laver en variabel på 10.
     $i = 10;
     // Laver variabelen om til 1
@@ -45,6 +49,7 @@
     echo $i;
     echo "<hr>";
 
+    // Dag 1: Opgave 7 ; Hvad udskriver følgende kode
     // Variable value = 10
     $value = 10;
     // Variable i = 10
@@ -58,7 +63,7 @@
 
     
 
-    // DAG 2 Opgave
+    // DAG 2 Opgave 1 ; Forgreninger og operatorer
     // Hvis alder er 18, udskriv "Du har stemmeret"
     $age= 18;
     if($age >=18) {
@@ -73,6 +78,7 @@
         echo "Du har ikke stemmeret";
     }
     echo "<hr>";
+    //  Dag 2: Opgave 4; Variabel med random
     // Hvis alder er under 0 eller over 130 udskrives "Ugyldig alder"
     $alder= rand(-100, 200);
     if($alder < 0 || $alder > 130) {
@@ -96,6 +102,7 @@
     
    <hr> 
    <?php 
+   // Dag 2: Opgave 5; Hvad udskriver følgende
    // Define Laver en værdi af Myndig som er 18
     define ("Myndig" , 18);
     $alder= 17;
@@ -112,6 +119,7 @@
     <hr>
 
     <?php
+    // Dag 2: Opgave 7; Hvad udskrive følgende på skærmen
         // Laver en defination som hedder alder=18
     $alder = 18;
         // Alder == 18 (Om alderen er 18, hvis den er udskrives Alderen er 18)
@@ -126,6 +134,7 @@
 
    <hr>
     <?php
+    // Dag 2: Opgave 8; Switch
     // Generere tilfældigt tal mellem 1 og 6
     $tal= rand(1,6);
     // Laver switch, hvor hver "Case" er Nummer 1 til 6 og printer det ud i romer tal
@@ -155,6 +164,10 @@
     <hr>
 
     <?php
+
+    //Dag 3: Løkker og Operatorer
+
+    // dag 3: Opgave 1; Løkke
     // Giver de forskellige ting værdier
     $maks= 10;
     $i= 10;
@@ -175,6 +188,7 @@
     <hr>
     
     <?php
+    // Dag 3: Opgave 2; Do while loop
     // Do loop
     $maks= 10;
     $i= 10;
@@ -192,10 +206,11 @@
 
 
     <?php
+    // Dag 3: Opgave 3; For løkke
     $sum= 0;
      // For loop
      // Mens i er mindre end 10, fortsæt i med at ligge 1 til ($i++) indtil 10 rammes
-     for ($i = 10; $i < 10; $i++) {
+     for ($i = 1; $i < 10; $i++) {
          // Udksriv $i
          echo $i, "<br>";
          // Sum er lig med $i +1 hele vejen til max rammes
@@ -207,3 +222,7 @@
 
     </body>
 </html>
+
+You from microsoft, yes?
+yes i am going to diagnose your pc pls let me move
+you need to send me $100 to fix sir
