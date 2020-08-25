@@ -157,11 +157,10 @@
     <?php
     // Giver de forskellige ting værdier
     $maks= 10;
-    $i= 1;
+    $i= 10;
     $sum= 0;
     //Mens (i er mindre end max fortsæt da i til max)
-    while ($i < $maks)
-            do {
+    while ($i < $maks) {
         //Udskriv i (Indtil den når max værdi) og breakline
         echo $i, "<br>";
         // Sum (som er værdi 0) skal plusses med værdi i (som er 1 op til max )
@@ -169,65 +168,42 @@
         //I++ = i + 1
         $i++;
     }
-    //Mens i er mindre end 20, fortsæt
-    while ($i <= 12);
+
     // Udskriv total sum 
     echo $sum;
     ?>
     <hr>
-
-
-
-
-
-
+    
     <?php
-$i = 1;
-do{
-    $i++;
-    echo "The number is " . $i . "<br>";
-}
-while($i <= 3);
-?>
-<hr>
-
-
-<?php
-$colors = array("Red", "Green", "Blue");
- 
-// Loop through colors array
-foreach($colors as $value){
-    echo $value . "<br>";
-}
-?>
-<hr>
-<?php
-    // Giver de forskellige ting værdier
-    $maks= 3;
-    $i= 1;
+    // Do loop
+    $maks= 10;
+    $i= 10;
     $sum= 0;
-    //Mens (i er mindre end max fortsæt da i til max)
-    while ($i < $maks)
-            do {
-        //Udskriv i (Indtil den når max værdi) og breakline
+
+    do {
         echo $i, "<br>";
-        // Sum (som er værdi 0) skal plusses med værdi i (som er 1 op til max )
         $sum += $i;
-        //I++ = i + 1
         $i++;
     }
-    //Mens i er mindre end 20, fortsæt
-    while ($i <= 4);
-    // Udskriv total sum 
+    while ($i < $maks);
     echo $sum;
     ?>
+    <br><hr>
 
-    <hr>
 
     <?php
-for ($x = 0; $x <= 10; $x++) {
-  echo "The number is: $x <br>";
-}
-?>
+    $sum= 0;
+     // For loop
+     // Mens i er mindre end 10, fortsæt i med at ligge 1 til ($i++) indtil 10 rammes
+     for ($i = 10; $i < 10; $i++) {
+         // Udksriv $i
+         echo $i, "<br>";
+         // Sum er lig med $i +1 hele vejen til max rammes
+         $sum += $i;
+     }
+     echo $sum;
+     echo "<hr>";
+     ?>
+
     </body>
 </html>
