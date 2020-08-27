@@ -160,7 +160,6 @@
       case 6:
         echo "VI";
       break;
-    break;
     }
     ?>
     <hr>
@@ -248,26 +247,26 @@
     <?php
     // Dag 3: Opsamling Array's og løkker
     // Dag 3: Eksempel 1
-    $names[0] = "Søren";
-    $names[1] = "Niels";
-    $names[2] = "Anders";
-    echo 'element nr. 0 er:' . $names[0] . '<br>';
-    echo 'element nr. 1 er:' . $names[1] . '<br>';
-    echo 'element nr. 2 er:' . $names[2] . '<br>';          
+    // $names[0] = "Søren";
+    // $names[1] = "Niels";
+    // $names[2] = "Anders";
+    // echo 'element nr. 0 er:' . $names[0] . '<br>';
+    // echo 'element nr. 1 er:' . $names[1] . '<br>';
+    // echo 'element nr. 2 er:' . $names[2] . '<br>';          
     ?>
     <hr>
 
 
     <?php
     // Dag 3: Eksempel 2
-    $NavnListe = array('Peter','Niels','Mikkel','Flemming', 'Hans', 'Nikolaj');
+    // $NavnListe = array('Peter','Niels','Mikkel','Flemming', 'Hans', 'Nikolaj');
 
-    echo 'element nr. 0 er :'.$NavnListe[0].'<br>';
-    echo 'element nr. 1 er :'.$NavnListe[1].'<br>';
-    echo 'element nr. 2 er :'. $NavnListe[2].'<br>';
-    echo 'element nr. 3 er :'. $NavnListe[3].'<br>';
-    echo 'element nr. 4 er :'. $NavnListe[4].'<br>';
-    echo  'element nr. 5 er :'. $NavnListe[5].'<br>';
+    // echo 'element nr. 0 er :'.$NavnListe[0].'<br>';
+    // echo 'element nr. 1 er :'.$NavnListe[1].'<br>';
+    // echo 'element nr. 2 er :'. $NavnListe[2].'<br>';
+    // echo 'element nr. 3 er :'. $NavnListe[3].'<br>';
+    // echo 'element nr. 4 er :'. $NavnListe[4].'<br>';
+    // echo  'element nr. 5 er :'. $NavnListe[5].'<br>';
     ?>
     <hr>
 
@@ -297,6 +296,8 @@
     ?>
 
     <?php
+
+    // Dag 3: Opgave 2 ; Array måned
     $MånedLgd = Array('31', '29', '31', '30', '31', '30', '28', '29', '31', '31', '29', '30');
     $Måned = Array('Januar', 'Febuar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'Septemper', 'October', 'November', 'December');
     for ($i = 0; $i < 12; $i++)
