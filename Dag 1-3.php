@@ -7,6 +7,8 @@
 </head>
 <body>
     <?php
+    // Dag 1:
+
     // Dag 1: Opgave 1 ; Variabler
     $myVar = 17;
     echo $myVar, "<br>";
@@ -61,7 +63,7 @@
     echo $i; 
     echo "<hr>"; 
 
-    
+    // Dag 2:
 
     // DAG 2 Opgave 1 ; Forgreninger og operatorer
     // Hvis alder er 18, udskriv "Du har stemmeret"
@@ -219,8 +221,88 @@
      echo $sum;
      echo "<hr>";
      ?>
-    <?php>
-    TEST
+
+
+     <?php
+    // Dag 3: Opgave 4; Omskriv while loop til for loop
+ 
+     for ($i = 0; $i < 10; $i++)
+     {
+         echo $i, "<br>";
+        
+     }
     ?>
-    </body>
+    <hr>
+    <?php
+    // Dag 3: Opgave 5; Omskriv for loop til while
+    $i = 10;
+    while ($i>0) {
+    $i--;
+    
+        echo $i, "<br>";
+    }
+    ?>
+    <hr>
+
+    
+    <?php
+    // Dag 3: Opsamling Array's og løkker
+    // Dag 3: Eksempel 1
+    $names[0] = "Søren";
+    $names[1] = "Niels";
+    $names[2] = "Anders";
+    echo 'element nr. 0 er:' . $names[0] . '<br>';
+    echo 'element nr. 1 er:' . $names[1] . '<br>';
+    echo 'element nr. 2 er:' . $names[2] . '<br>';          
+    ?>
+    <hr>
+
+
+    <?php
+    // Dag 3: Eksempel 2
+    $NavnListe = array('Peter','Niels','Mikkel','Flemming', 'Hans', 'Nikolaj');
+
+    echo 'element nr. 0 er :'.$NavnListe[0].'<br>';
+    echo 'element nr. 1 er :'.$NavnListe[1].'<br>';
+    echo 'element nr. 2 er :'. $NavnListe[2].'<br>';
+    echo 'element nr. 3 er :'. $NavnListe[3].'<br>';
+    echo 'element nr. 4 er :'. $NavnListe[4].'<br>';
+    echo  'element nr. 5 er :'. $NavnListe[5].'<br>';
+    ?>
+    <hr>
+
+
+    <?php
+    //Dag 3: Eksempel 3
+    // $alder["søren"] = "30";     
+    // $alder["niels"] = "31";
+    // $alder["anders"] = "32";
+
+    // echo "søren er" . $alder["søren"] . " år gammel";
+    // echo "<br>";
+    // echo " niels er" . $alder["niels"] . " år gammel";
+    // echo "<br>";
+    // echo "anders er" . $alder["anders"] . " år gammel";
+    ?>             
+    <hr>
+
+    <?php 
+    // Dag 3: Opgave 1 ; Omskriv Eksempel 2 til for loop
+    $NavneListe = array('Peter','Niels','Mikkel','Flemming', 'Hans', 'Nikolaj');
+    for ($i = 0; $i < 5; $i++) {
+        echo "Element Nr. ", $i, " er " .$NavneListe[$i], "<br>";
+
+    }
+    echo "<hr>";
+    ?>
+
+    <?php
+    $MånedLgd = Array('31', '29', '31', '30', '31', '30', '28', '29', '31', '31', '29', '30');
+    $Måned = Array('Januar', 'Febuar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'Septemper', 'October', 'November', 'December');
+    for ($i = 0; $i < 12; $i++)
+    {
+        echo $Måned[$i], " har ", $MånedLgd[$i], " dage. ", "<br>";
+    }
+    ?>
+</body>
 </html>
