@@ -305,5 +305,6 @@
         echo $Måned[$i], " har ", $MånedLgd[$i], " dage. ", "<br>";
     }
     ?>
+    
 </body>
 </html>

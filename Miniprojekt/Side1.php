@@ -8,8 +8,8 @@
 <body>
 <!-- Form action = Sender det til side 2, method get info, navn og alder, plus submit knap -->
     <form action="Side2.php" method="get">
-    Navn: <input type="text" name="navn" />
-    Alder: <input type="text" name="alder" />
+    <input type="text" name="navn" />
+    <input type="text" name="alder" />
     <input type="submit" />
     </form>
 

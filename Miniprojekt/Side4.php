@@ -16,14 +16,23 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $tal = 10; //rand(1,100)
         $input = $_POST['input'];
-        echo $tal;
+        echo $tal; }
     
         if($input == $tal){
             echo "Flot - rigtig gættet!";
         }
-        elseif ($input);
+        
+        elseif ($input < 1) {
+            echo "uden for den angivne interval på 1-100";
+        }
 
-    }
+        elseif ($input > 100) {
+            echo "uden for den angivne interval på 1-100";
+        }
+        elseif ($input < ) {
+        echo "Ikke helt ved siden af";
+        }
+
 
     ?>
 </body>
