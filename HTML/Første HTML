@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+            <meta charset="UTF-8">
+                <Title>Awesomeness.org</Title>
+        </head>
+
+        <body style="background-color:lightskyblue">
+            <H1>Edward Joseph Snowden</H1></body>
+
+            <p><i><a href="mailto:math86m5@edu.sde.dk">Mathias Brøndvig</a></i></p>
+            <br />
+
+            <style type="text/css">
+                #spalte1 {
+                    float:left;
+                    width:50%;
+                }
+                #spalte2 {
+                    float:left;
+                    width: 50%;
+                }
+
+                form {
+                    text-align: right;
+                    }
+                </style>
+
+        
+
+                <div id="spalte1">
+                    <p>Edward Joseph Snowden (born June 21, 1983) is an American whistleblower who copied and leaked highly classified information from the <br />
+                         National Security Agency (NSA) in 2013 when he was a Central Intelligence Agency (CIA) employee and subcontractor.<br />
+                         His disclosures revealed numerous global surveillance programs, many run by the NSA and the Five Eyes Intelligence Alliance with <br/>
+                         the cooperation of telecommunication companies and European governments <br />
+                         and prompted a cultural discussion about national security and individual privacy. hej</p>
+                </div>
+
+                
+
+                <div id="spalte2">
+                    <p> In 2013, Snowden was hired by an NSA contractor, Booz Allen Hamilton, after previous employment with Dell and the CIA. <br />
+                        Snowden says he gradually became disillusioned with the programs with which he was involved and that he tried to raise his ethical concerns through internal channels but was ignored. <br />
+                        On May 20, 2013, Snowden flew to Hong Kong after leaving his job at an NSA facility in Hawaii, and in early June he revealed thousands of classified NSA documents to journalists Glenn Greenwald, Laura Poitras, and Ewen MacAskill. <br />
+                        Snowden came to international attention after stories based on the material appeared in The Guardian and The Washington Post. Further disclosures were made by other publications including Der Spiegel and The New York Times. <br />
+                    </p>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Edward_Snowden-2.jpg" width="250" height="300" title="Snowden"> <br />
+
+                <div id="spalte1">
+                    <p> On June 21, 2013, the United States Department of Justice unsealed charges against Snowden of two counts of violating <br />
+                         the Espionage Act of 1917 and theft of government property. Following which the Department of State revoked his passport <br />
+                </div>
+
+
+                <table align="left" border="2" bordercolor="black" <h3>Andet information<br /></h3>
+                    <tr>
+                        <td ALIGN=left> <a href="https://www.tv2ostjylland.dk/files/styles/viewer_medium/public/media/2016/01/112810.jpg?itok=g6SDOrZO"target="_blank">Kaj<br /></a>  </td>
+                            <td ALIGN=left> <a href="https://www.dofsydvest.dk/images/Arkiv/Diverse/billeder/Maager_Tyndnaebbet_Maage_Eva_Foss.jpg"target="_blank">Bent<br /></a> 
+                            </td>
+                    </tr>
+                
+                    <tr>
+                        <td ALIGN=left> <a href="https://asset.dr.dk/imagescaler/?protocol=https&server=www.dr.dk&file=%2Fimages%2Fcrop%2F2018%2F03%2F27%2F1522159681_scanpix-20130912-081116-l.jpg&scaleAfter=crop&quality=70&w=720&h=405"target="_blank">Bøje</a> <br /></td>
+                            <td ALIGN=left vlign="top"><a href="https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/methode/2020/04/08/f8a15d88-7924-11ea-9479-e3cad17ef2b4_image_hires_150759.jpg?itok=tSjoY-fx&v=1586329688"target="_blank">Bent's fætter </a></td>
+                            </tr>
+                        </table>
+                        </tr>
+                        
+                  <form action="https://hi1.createsend1.com/images/sign-up-confirmed.png">
+                        <input type="text" placeholder="Subscribe for more news!" required>
+                        <button type="submit" a href>Submit</button> 
+                  </form>
+
+                  <br />
+                  <form id=spalte1 action="action_page.php" method="post">
+
+                  
+                    <div class="container">
+                      <label for="uname"><b>Username</b></label>
+                      <input type="text" placeholder="Brugernavn" name="uname" required>
+                      <br />
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Adgangskode" name="psw" required>
+                        <br />
+                      <button type="submit">Login</button>
+                     
+                    </div>
+                  
+                    <div class="container" style=>
+                      <button type="button" class="cancelbtn">Cancel</button>
+                      <span class="psw">Glemt <a href="#">Kodeord?</a></span>
+                    </div>
+                  </form>
+
+
+                
+</html>
