@@ -42,7 +42,7 @@ else {
     }
 }
 
-    //Echo "Du gættede på nummer ", $input,". Det korrekte nummer var " , $number, ".";
+    //Ved session finish, udksriv Spillet er slut, du gættede på og det rigtige var (Session_destroy)
     if ($_SESSION['finished'] == true) {
     "<br>";
     echo "Spillet er slut", "<br>";
