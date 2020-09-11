@@ -13,7 +13,7 @@ session_start();
 $input = $_GET['input'];
 $number = $_SESSION['number'];
 
-//Hvis number er ikke = input (antal forsøg) udskriver forsøg brugt og tilbage. ( Så hvis man gætter forkert)
+//Hvis number er mindre end input (antal forsøg) udskriver forsøg brugt og tilbage.
 if ($number != $input) {
     echo "Du har brugt ", $_SESSION['input'], " forsøg. <br> Du har ", abs($_SESSION['input']-10), " forsøg tilbage.", "<br>";
 }
@@ -24,11 +24,11 @@ if ($number == $input) {
     echo "Du har i alt brugt ", $_SESSION['input'], " forsøg. Dine forsøg nulstilles.", "<br>";
     $_SESSION['finished'] = true;
 }
-// Ellers hvis input er under 0 eller input er over 100 udskriv fejl i interval
+// Ellers hvis indput er under 0 eller input er over 100 udskriv fejl i interval
 elseif ($input <0 || $input > 100) {
     Echo "Uden for den angivne interval på 1-100", "<br>";
 }
-// Ellers minus number og input er det over 50 udskriv meget langt forbi
+// Ellers minus number og indput er det over 50 udskriv meget langt forbi
 elseif (abs($number - $input) > 50) {
     Echo "Meget langt forbi", "<br>";
 }

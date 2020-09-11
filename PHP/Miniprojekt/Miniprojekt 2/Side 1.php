@@ -21,7 +21,7 @@
         $_SESSION['input'] = 1;
         $_SESSION['number'] = rand(1,100);
     }
-    // Hvis input variabel kommer på 10, er session finised sandt og spillet slutter.
+    // Hvis input variabel kommer på 10, er session finised sand og spillet slutter.
     if  ($_SESSION['input'] == 10) {
         $_SESSION['finished'] = true;
     }
