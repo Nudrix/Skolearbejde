@@ -9,37 +9,37 @@
     <?php
     // Dag 1:
 
-    // Dag 1: Opgave 1 ; Variabler
+    echo "Dag 1: Opgave 1 - Variabler:", "<br>";
     $myVar = 17;
     echo $myVar, "<br>";
     $myVar = 2;
     echo $myVar;
     echo "<hr>";
-    //Dag 1: Opgave 2 ; Variabler videre
+    echo "Dag 1: Opgave 2 - Variabler videre:", "<br>";
     $myName = "Mathias";
     echo $myName, "<BR>";
     //Fuldt navn
    $myName = "Mathias Brøndvig";
-    echo $myName, "<BR>";
+    echo $myName, "<hr>";
 
-    // Dag 1: Opgave 3 ; Operatorer
+    echo "Dag 1: Opgave 3 - Operatorer:", "<br>";
     $var1 = 17;
     $var2 = 9;
     $var3 = $var1 + $var2;
-    echo $var3, "<br>";
+    echo $var3, "<hr>";
 
-    //Dag 1: Opgave 4 del 1 ; Strings
+    echo "Dag 1: Opgave 4 del 1 - Strings:", "<br>";
     $var1 = "husk";
     $var2 = "at";
     echo $var1. $var2, "<br>";
     echo "<hr>";
     
-    //Dag 1: Opgave 5 ; Strings del2
+    echo "Dag 1: Opgave 5 - Strings del2:", "<br>";
     $minby = "Brenderup";
     echo strlen($minby), "<br>";
     echo "<hr>";
     
-    // Dag 1: Opgave 6 ; Hvad udskriver følgende kode
+    echo "Dag 1: Opgave 6 - Hvad udskriver følgende kode?", "<br>";
     // Du laver en variabel på 10.
     $i = 10;
     // Laver variabelen om til 1
@@ -51,7 +51,7 @@
     echo $i;
     echo "<hr>";
 
-    // Dag 1: Opgave 7 ; Hvad udskriver følgende kode
+    echo "Dag 1: Opgave 7 - Hvad udskriver følgende kode?", "<br>";
     // Variable value = 10
     $value = 10;
     // Variable i = 10
@@ -63,9 +63,9 @@
     echo $i; 
     echo "<hr>"; 
 
-    // Dag 2:
+   
 
-    // DAG 2 Opgave 1 ; Forgreninger og operatorer
+    echo "Dag 2: Opgave 1 til 3 - Forgreninger og operatorer:", "<br>";
     // Hvis alder er 18, udskriv "Du har stemmeret"
     $age= 18;
     if($age >=18) {
@@ -80,7 +80,7 @@
         echo "Du har ikke stemmeret";
     }
     echo "<hr>";
-    //  Dag 2: Opgave 4; Variabel med random
+    echo  "Dag 2: Opgave 4 - Variabel med random:", "<br>";
     // Hvis alder er under 0 eller over 130 udskrives "Ugyldig alder"
     $alder= rand(-100, 200);
     if($alder < 0 || $alder > 130) {
@@ -104,7 +104,7 @@
     
    <hr> 
    <?php 
-   // Dag 2: Opgave 5; Hvad udskriver følgende
+   echo "Dag 2: Opgave 5 + 6 - Hvad udskriver følgende?", "<br>";
    // Define Laver en værdi af Myndig som er 18
     define ("Myndig" , 18);
     $alder= 17;
@@ -121,7 +121,7 @@
     <hr>
 
     <?php
-    // Dag 2: Opgave 7; Hvad udskrive følgende på skærmen
+    echo "Dag 2: Opgave 7; Hvad udskrive følgende på skærmen?", "<br>";
         // Laver en defination som hedder alder=18
     $alder = 18;
         // Alder == 18 (Om alderen er 18, hvis den er udskrives Alderen er 18)
@@ -136,7 +136,7 @@
 
    <hr>
     <?php
-    // Dag 2: Opgave 8; Switch
+    echo "Dag 2: Opgave 8 - Switch:", "<br>";
     // Generere tilfældigt tal mellem 1 og 6
     $tal= rand(1,6);
     // Laver switch, hvor hver "Case" er Nummer 1 til 6 og printer det ud i romer tal
@@ -166,9 +166,8 @@
 
    <?php
 
-    //Dag 3: Løkker og Operatorer
 
-    // dag 3: Opgave 1; Løkke
+    echo "Dag 3: Opgave 1 - Løkke:", "<br>";
     // Giver de forskellige ting værdier
     $maks= 10;
     $i= 1;
@@ -187,7 +186,7 @@
     <hr>
     
     <?php
-     //Dag 3: Opgave 2; Do while loop
+     echo "Dag 3: Opgave 2 - Do while loop:", "<br>";
      //Do loop
     $maks= 10;
     $i= 1;
@@ -206,7 +205,7 @@
 
 
     <?php
-    // Dag 3: Opgave 3; For løkke
+    echo "Dag 3: Opgave 3 - For løkke:", "<br>";
     $sum= 0;
      // For loop
      // Mens i er mindre end 10, fortsæt i med at ligge 1 til ($i++) indtil 10 rammes
@@ -222,7 +221,7 @@
 
 
      <?php
-    // Dag 3: Opgave 4; Omskriv while loop til for loop
+    echo "Dag 3: Opgave 4 - Omskriv while loop til for loop:", "<br>";
  
      for ($i = 0; $i < 10; $i++)
      {
@@ -232,7 +231,7 @@
     ?>
     <hr>
     <?php
-    // Dag 3: Opgave 5; Omskriv for loop til while
+    echo "Dag 3: Opgave 5 - Omskriv for loop til while:", "<br>";
     $i = 10;
     while ($i>0) {
     $i--;
@@ -253,7 +252,7 @@
     // echo 'element nr. 1 er:' . $names[1] . '<br>';
     // echo 'element nr. 2 er:' . $names[2] . '<br>';          
     ?>
-    <hr>
+ 
 
 
     <?php
@@ -267,7 +266,7 @@
     // echo 'element nr. 4 er :'. $NavnListe[4].'<br>';
     // echo  'element nr. 5 er :'. $NavnListe[5].'<br>';
     ?>
-    <hr>
+ 
 
 
     <?php
@@ -282,10 +281,10 @@
     // echo "<br>";
     // echo "anders er" . $alder["anders"] . " år gammel";
     ?>             
-    <hr>
+ 
 
     <?php 
-    // Dag 3: Opgave 1 ; Omskriv Eksempel 2 til for loop
+    echo "Dag 3: Opgave 6.1 - Omskriv Eksempel 2 til for loop:", "<br>";
     $NavneListe = array('Peter','Niels','Mikkel','Flemming', 'Hans', 'Nikolaj');
     for ($i = 0; $i < 5; $i++) {
         echo "Element Nr. ", $i, " er " .$NavneListe[$i], "<br>";
@@ -296,7 +295,7 @@
 
     <?php
 
-    // Dag 3: Opgave 2 ; Array måned
+    echo "Dag 3: Opgave 6.1 - Array måned:", "<br>";
     $MånedLgd = Array('31', '29', '31', '30', '31', '30', '28', '29', '31', '31', '29', '30');
     $Måned = Array('Januar', 'Febuar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'Septemper', 'October', 'November', 'December');
     for ($i = 0; $i < 12; $i++)
