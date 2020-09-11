@@ -15,15 +15,17 @@
         if (isset ($_SESSION['input'])) {
             // Session +1
              $_SESSION['input']++;
+             echo $_SESSION['number'];
  }
  else {
      // Laver variabler og giver værdi
         $_SESSION['input'] = 1;
         $_SESSION['number'] = rand(1,100);
+
     }
     // Hvis input variabel kommer på 10, er session finised sandt og spillet slutter.
     if  ($_SESSION['input'] == 10) {
-        $_SESSION['finished'] = true;
+         $_SESSION['finished'] = true;
     }
 ?>
     <form action="Side 2.php" method="GET">
