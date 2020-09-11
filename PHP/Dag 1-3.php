@@ -161,47 +161,46 @@
         echo "VI";
       break;
     }
-    ?>
-    <hr>
+    ?> <hr>
 
-    <?php
+
+   <?php
 
     //Dag 3: Løkker og Operatorer
 
     // dag 3: Opgave 1; Løkke
     // Giver de forskellige ting værdier
     $maks= 10;
-    $i= 10;
+    $i= 1;
     $sum= 0;
     //Mens (i er mindre end max fortsæt da i til max)
-    while ($i < $maks) {
-        //Udskriv i (Indtil den når max værdi) og breakline
-        echo $i, "<br>";
-        // Sum (som er værdi 0) skal plusses med værdi i (som er 1 op til max )
-        $sum += $i;
-        //I++ = i + 1
-        $i++;
+    while ($i < $maks) {   
+     //Sum (som er værdi 0) skal plusses med værdi i (som er 1 op til max )
+    $sum += $i;
+     //Udskriv sum (Indtil den når max værdi) og breakline
+    echo $sum, "<br>";
+    //$i++ = i + 1
+    $i++;
     }
 
-    // Udskriv total sum 
-    echo $sum;
     ?>
     <hr>
     
     <?php
-    // Dag 3: Opgave 2; Do while loop
-    // Do loop
+     //Dag 3: Opgave 2; Do while loop
+     //Do loop
     $maks= 10;
-    $i= 10;
+    $i= 1;
     $sum= 0;
 
     do {
-        echo $i, "<br>";
+       /// echo $i, "<br>";
         $sum += $i;
         $i++;
+        echo $sum. "<br>";
     }
     while ($i < $maks);
-    echo $sum;
+   
     ?>
     <br><hr>
 
@@ -211,9 +210,9 @@
     $sum= 0;
      // For loop
      // Mens i er mindre end 10, fortsæt i med at ligge 1 til ($i++) indtil 10 rammes
-     for ($i = 1; $i < 10; $i++) {
+     for ($i = 1   ; $i < 10; $i++) {
          // Udksriv $i
-         echo $i, "<br>";
+         echo $sum, "<br>";
          // Sum er lig med $i +1 hele vejen til max rammes
          $sum += $i;
      }
