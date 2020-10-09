@@ -21,17 +21,17 @@
         else if (strlen($email) > 30) {
             echo "Email er for lang.";
         }
-        else if (strpos($email, "@") == false) {
+        else if (substr_count($email, "@") == "1") {
             echo "Indtast gyldig email. (@ mangler)";
         }
 
-        else if (strpos($email, ".dk") == false) {
+        else if (substr($email, "-3") == ".dk") {
             echo "Indtast gyldig email. (.dk mangler)";
         }
         else {
             echo "Valid Email";
         }
     }
-    ?>
+    ?>  
 </body>
 </html>
