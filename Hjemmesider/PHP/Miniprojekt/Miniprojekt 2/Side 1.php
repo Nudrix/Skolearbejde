@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miniprojekt Side 1</title>
+    <title>Miniprojekt side 1</title>
 </head>
 <body>
 <?php
