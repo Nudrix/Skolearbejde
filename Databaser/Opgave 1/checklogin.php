@@ -6,6 +6,7 @@
     <title>Login screen</title>
 </head>
 <body>
+<form action="forum.php" method="get">
 <?php
 session_start();
 if (isset($_SESSION['login'])){
@@ -13,7 +14,7 @@ if (isset($_SESSION['login'])){
 else {$_SESSION['login'] = 1;
 }
 if ($_SESSION['login'] == 5) {
-    session_destroy();
+    //unset($_SESSION["login"]);
     header("Location: http://www.google.com");
 } 
     echo $_SESSION['login']." <br> ";
@@ -50,22 +51,28 @@ if ($_SESSION['login'] == 5) {
      // resultat ind i variablen "$count"
      $count =mysqli_num_rows($resultat);
 
+
      // Hvis denne php funktion kommer tilbage med 1 række (row), vil det sige at der eksisterer en bruger
      // med det indtastede brugernavn og password og nu kan vi bruge en simpel "if .." sætning for hvad der
      // så skal ske
 
      if ($count == 1){
      
+
         //Hvis en bruger eksistere, bruger vi "head(location: ...)" metoden for at sende brugeren
         // til den side der kræver login.
         $_SESSION['login'] = 1;
-        header("location:correct_login.php");
+        header("location: forum.php");
+
+         //$SESSION["username"] = $username;
+           // header("Location: forum.php");
      }
      else
      {
          //Hvis "$count" ikke er lig med 1, så skriver vi bedsked til brugeren.
         
         echo "Forkert Brugernavn eller password"; }
+        $_SESSION['finished'] = false;
 ?>
 
 </body>
