@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", method="GET";>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", method="POST";>
     <title>Login screen</title>
 </head>
 <body>
-    <?php
-    session_start();
+<?php
+session_start();
+if (isset($_SESSION['login'])){
+    $_SESSION['login'] ++; }
+else {$_SESSION['login'] = 1;
+}
+if ($_SESSION['login'] == 5) {
+    session_destroy();
+    header("Location: http://www.google.com");
+} 
+    echo $_SESSION['login']." <br> ";
+    
+
     $host="localhost"; // Navn på host
     $username="root"; // Mysgl username (Standard admin i linux er root)
     $password="";    // mysgl password (Som standard ikke sat noget password)
@@ -54,12 +65,8 @@
      {
          //Hvis "$count" ikke er lig med 1, så skriver vi bedsked til brugeren.
         
-        echo "Forkert Brugernavn eller password";
-     }
-    
-    ?>
+        echo "Forkert Brugernavn eller password"; }
+?>
 
-
-     
 </body>
 </html>

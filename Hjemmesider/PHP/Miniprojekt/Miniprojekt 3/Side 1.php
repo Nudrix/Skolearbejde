@@ -13,25 +13,38 @@
     
     <?php
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+{
         $email = $_POST['email'];
-        if (strlen($email) < 7) {
-            echo "Email er for kort.";
-        }
-        else if (strlen($email) > 30) {
-            echo "Email er for lang.";
-        }
-        else if (substr_count($email, "@") == "1") {
-            echo "Indtast gyldig email. (@ mangler)";
-        }
+        if (strlen($email) > 7 or strlen($email) < 30) 
+        {
+            
+        
+            if (substr_count($email, "@") == "1") 
+            {
+                      
+                    
 
-        else if (substr($email, "-3") == ".dk") {
-            echo "Indtast gyldig email. (.dk mangler)";
+                     if (substr($email, "-3") == ".dk") 
+                     {
+                      echo "Valid mail";
+                    }
+                     else 
+                     {
+                        echo "Indtast gyldig email. (.dk mangler)";
+                    }
+                        
+                    
+
+            }        
+            else 
+            {echo "Indtast gyldig email. (@ mangler)";
+            }
         }
-        else {
-            echo "Valid Email";
+      else 
+        {echo "Email er for kort eller for lang.";
         }
-    }
-    ?>  
+}
+      ?>
 </body>
 </html>
