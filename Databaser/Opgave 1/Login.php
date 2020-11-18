@@ -6,7 +6,11 @@
     <title>Login screen</title>
 </head>
 <body>
-
+<?php
+session_start();
+$_SESSION['success'] = 0;
+echo $_SESSION['success'];
+?>
     <form name="form1" method="POST" action="checklogin.php">
         <table width="150px" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
             <tr>

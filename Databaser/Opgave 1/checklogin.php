@@ -6,7 +6,6 @@
     <title>Login screen</title>
 </head>
 <body>
-<form action="forum.php" method="get">
 <?php
 session_start();
 if (isset($_SESSION['login'])){
@@ -61,8 +60,9 @@ if ($_SESSION['login'] == 5) {
 
         //Hvis en bruger eksistere, bruger vi "head(location: ...)" metoden for at sende brugeren
         // til den side der kræver login.
+        $_SESSION['success'] = 1;
         $_SESSION['login'] = 1;
-        header("location: forum.php");
+        header("location: Mainpage.php");
 
          //$SESSION["username"] = $username;
            // header("Location: forum.php");
