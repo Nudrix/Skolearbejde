@@ -1,0 +1,49 @@
+body {
+    background-color:powderblue;
+}
+
+.title {
+  color: red;
+  text-align: center;
+}
+
+.tekst1 {
+  position: absolute;
+  left: 1%;
+  top: 10%;
+  width: 30%;
+}
+
+.pic1 {
+  position: absolute;
+  left: 37%;
+  top: 10%;
+  width: 530;
+  height: 430;
+}
+
+.tekst2 {
+  position: absolute;
+  right: 1%;
+  top: 10%;
+  width: 30%;
+}
+.tekst3 {
+  position: absolute;
+  left: 1%;
+  bottom: 50%;
+  width: 30%;
+}
+.table1 {
+  position: absolute;
+  left: 75%;
+  top: 60%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+.from1 {
+  position: absolute;
+  left:50%%;
+  top:80%;
+}

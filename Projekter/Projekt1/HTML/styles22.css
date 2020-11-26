@@ -1,0 +1,25 @@
+body {
+    background-color:yellow;
+}
+
+.title {
+  color: blue;
+  text-align: center;
+}
+
+.tekst1 {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 35%;
+}
+.pic1 {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+}
+.table1 {
+  position: absolute;
+  left: 75%;
+  top: 60%;
+}
