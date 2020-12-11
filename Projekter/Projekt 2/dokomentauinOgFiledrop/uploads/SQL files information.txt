@@ -1,0 +1,3 @@
+Demo.sql = Upload database
+Login.sql= Login Database
+opslag.sql= Opslagstavlen 
