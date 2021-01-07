@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Familie Side </title>
+  <link rel="stylesheet" href="../Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <ul>
+    <li><a class="active" href="../Index.html">Startside</a></li>
+    <li><a href="Skema.html">Kalender</a></li>
+    <li><a href="Billede-side.html">Billede Upload</a></li>
+    <li><a href="Billede-side2.html">Billede</a></li>
+    <li><a href="../Andelsforening/Andelsforening.html">Andelsforening</a></li>
+  </ul>
+
+
+
+
+  <link href =
+  "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+              rel = "stylesheet">
+
+      <script src =
+  "https://code.jquery.com/jquery-1.10.2.js">
+      </script>
+
+      <script src =
+  "https://code.jquery.com/ui/1.10.4/jquery-ui.js">
+      </script>
+
+      <style>
+
+          /* text align for the body */
+          body {
+              text-align: center;
+          }
+
+          /* image dimension */
+          img{
+              height: 200px;
+              width: 350px;
+          }
+
+          /* imagelistId styling */
+          #imageListId
+          {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          }
+          #imageListId div
+          {
+              margin: 0 4px 4px 4px;
+              padding: 0.4em;
+              display: inline-block;
+          }
+
+          /* Output order styling */
+          #outputvalues{
+          margin: 0 2px 2px 2px;
+          padding: 0.4em;
+          padding-left: 1.5em;
+          width: 250px;
+          border: 2px solid dark-green;
+          background : gray;
+          }
+          .listitemClass
+          {
+              border: 1px solid #006400;
+              width: 350px;
+          }
+          .height{
+              height: 10px;
+          }
+      </style>
+
+      <script>
+          $(function() {
+              $( "#imageListId" ).sortable({
+              update: function(event, ui) {
+                  getIdsOfImages();
+              }//end update
+              });
+          });
+
+          function getIdsOfImages() {
+              var values = [];
+              $('.listitemClass').each(function (index) {
+                  values.push($(this).attr("id")
+                          .replace("imageNo", ""));
+              });
+
+              $('#outputvalues').val(values);
+          }
+      </script>
+  </head>
+
+  <body>
+      <h1 style="color:green">Billeder</h1>
+
+
+      <div class="height"></div><br>
+
+      <div id = "imageListId">
+          <div id="imageNo1" class = "listitemClass">
+              <img src="https://i.ibb.co/HBrpdWf/Pic6.jpg" alt="">
+          </div>
+
+          <div id="imageNo2" class = "listitemClass">
+              <img src="https://i.ibb.co/LSzyTqg/Pic1.jpg" alt="">
+          </div>
+
+          <div id="imageNo3" class = "listitemClass">
+              <img src="https://i.ibb.co/RgpzHKT/Pic5.jpg" alt="">
+          </div>
+
+          <div id="imageNo4" class = "listitemClass">
+              <img src="https://i.ibb.co/qMwhYPb/Pic7.jpg" alt="">
+          </div>
+
+          <div id="imageNo5" class = "listitemClass">
+              <img src="https://i.ibb.co/60FHdJD/Pic4.jpg" alt="">
+          </div>
+
+          <div id="imageNo6" class = "listitemClass">
+              <img src="https://i.ibb.co/60FHdJD/Pic4.jpg" alt="">
+          </div>
+
+          <div id="imageNo7" class = "listitemClass">
+              <img src="https://i.ibb.co/86s1KxC/Pic2.jpg" alt="">
+          </div>
+
+          <div id="imageNo8" class = "listitemClass">
+              <img src="https://i.ibb.co/MssZGzh/Pic3.jpg" alt="">
+          </div>
+
+          <div id="imageNo9" class = "listitemClass">
+              <img src="https://i.ibb.co/xXsRyVJ/Pic12.jpg" alt="">
+          </div>
+
+          <div id="imageNo10" class = "listitemClass">
+              <img src="https://i.ibb.co/C5sTgbQ/Pic13.jpg" alt="">
+          </div>
+
+          <div id="imageNo11" class = "listitemClass">
+              <img src="https://i.ibb.co/LkdV0Rz/Pic14.jpg" alt="">
+          </div>
+
+          <div id="imageNo12" class = "listitemClass">
+              <img src="https://i.ibb.co/ynvVYt2/Pic8.jpg" alt="">
+          </div>
+
+          <div id="imageNo13" class = "listitemClass">
+              <img src="https://i.ibb.co/G9xZKp5/Pic9.jpg" alt="">
+          </div>
+
+          <div id="imageNo14" class = "listitemClass">
+              <img src="https://i.ibb.co/zbTkPq4/Pic10.jpg" alt="">
+          </div>
+
+          <div id="imageNo15" class = "listitemClass">
+              <img src="https://i.ibb.co/6bpZXWK/Pic11.png" alt="">
+          </div>
+      </div>
+
+
+
+
+
+
+</body>
+</html>

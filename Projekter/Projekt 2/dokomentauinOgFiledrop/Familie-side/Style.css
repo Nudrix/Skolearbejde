@@ -1,0 +1,123 @@
+/* Configuration for alle sider */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+
+
+
+/* Index Side */
+#Pic1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+
+#Index-overskift {
+  position: absolute;
+  top: 5%;
+  left: 43.5%;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Skema Side */
+#Skema {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+
+
+
+
+/* Billede Side */
+#box {
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #aaaaaa;
+}
+
+#pic-upload {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+}
+
+#drop-region {
+	background-color: #fff;
+	border-radius:20px;
+	box-shadow:0 0 35px rgba(0,0,0,0.05);
+	width:400px;
+	padding:60px 40px;
+	text-align: center;
+	cursor:pointer;
+	transition:.3s;
+}
+#drop-region:hover {
+	box-shadow:0 0 45px rgba(0,0,0,0.1);
+}
+
+#image-preview {
+	margin-top:20px;
+}
+#image-preview .image-view {
+    display: inline-block;
+	position:relative;
+	margin-right: 13px;
+	margin-bottom: 13px;
+}
+#image-preview .image-view img {
+    max-width: 100px;
+    max-height: 100px;
+}
+#image-preview .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(255,255,255,0.5);
+}
+
+
+
+
+
+
+
+/* Pics Side */
+.Pics {
+  width: 50%;
+  height: 50%;
+}

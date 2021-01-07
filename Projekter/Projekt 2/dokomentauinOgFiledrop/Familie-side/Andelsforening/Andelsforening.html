@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Andelsforening </title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div id="overskift">
+<h1> Andelsforening <h1>
+</div>
+
+<div id="pic">
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="pic/pic1.jpg" style="width:100%; height:600px;">
+    <div class="text">Vores nye projekt i Odense</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="pic/pic2.jpg" style="width:100%; height:600px;">
+    <div class="text">Vores nye projekt i København</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="pic/pic3.jpg" style="width:100%; height:600px;">
+    <div class="text">Vores nyrenoverede lejligheder i Århus</div>
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+<ul>
+  <li><a href="Andelsforening.html">Startside</a></li>
+  <li><a href="sites/nyheder.html">Nyheder</a></li>
+  <li><a href="sites/kontakt os.html">Kontakt Os</a></li>
+  <li style="float:right"><a class="active2" href="sites/om os.html">Om Os</a></li>
+</ul>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 2 seconds
+}
+</script>
+
+<div id="corona">
+<article>
+
+  <h2> Generalforsamlingen post corona-nedlukning </h2>
+
+  <p> Corona har forandret hverdagen for mange danskere –
+      ikke blot under, men også efter. Hjemmearbejde,
+      online-familiemiddage, fællessang og nye
+      forbrugsmønstre er blot nogle af de ændringer,
+      flere af os tager med ud på den anden side.
+      Men også generalforsamlingen kan tage nye former
+      i fremtiden, efter corona kom i vejen.
+      Ejendomsadministrationsselskabet Newsec
+      gør os klogere på denne udvikling.
+  </p>
+
+  <a href="sites\Generalforsamlingen post corona-nedlukning.html">Læs Mere</a>
+
+</<article>
+</div>
+
+
+
+<div id="kloakken">
+<article>
+
+  <h2> LAR: Kloakkens livredder – Sådan undgår
+       du at skulle svømme ned med skraldet </h2>
+
+  <p> Klimaændringerne bringer flere regnskyl
+      med sig, og over de næste 100 år vil der
+      komme op mod 30 procent mere regn i de
+      danske gader.
+
+      <br><br><br>
+
+      Regnen falder og nedbørsmængderne
+      stiger – men hvordan skal man håndtere
+      klimaændringernes vejrmæssige følger?
+  </p>
+
+  <a href="sites\Kloakkens livredder.html">Læs Mere</a>
+
+</<article>
+</div>
+
+
+
+<div id="bunden-af-siden">
+<footer>
+  <p>Author: Christian Rune & Martin Egeskov<br>
+  <a href="mailto:Christian.rune1998.sde@gmail.com">Christian.rune1998.sde@gmail.com</a></p>
+</footer>
+</div>
+
+
+</body>
+</html>

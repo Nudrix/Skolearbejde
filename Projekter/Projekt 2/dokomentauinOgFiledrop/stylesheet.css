@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  overflow: hidden;
+}
+
+header {
+  display: cover;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+table {
+  position: absolute;
+  align-items: center;
+  color: black;
+}
+
+#container {
+  padding-left: 30%;
+  padding-top: 9%;
+}
+
+thead {
+
+
+}
+.row {
+  color: black;
+
+
+}
+
+
+#videoDiv2 {}
+
+/* This has been changed */
+#video2 {
+  position: fixed;
+  z-index: -1;
+  background-color: lightblue;
+  opacity: 0.5;
+
+}
+
+/* This has been changed */
+#videoMessage2 {
+  position: absolute;
+  margin-top: 6%;
+  padding-left: 31%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

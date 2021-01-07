@@ -15,3 +15,5 @@ echo  "Om 5 år er du ", $_GET["Alder"]+5, " år gammel."
 
 </body>
 </html>
+
+

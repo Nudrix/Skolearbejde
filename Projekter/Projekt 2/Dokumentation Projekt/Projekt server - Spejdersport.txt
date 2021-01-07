@@ -1,0 +1,14 @@
+
+Windows login:
+Adminstrator 
+Test1234
+
+DSRM:
+Test1234
+
+
+
+Active Directory:
+Arman = Arman / Test1234 (Chef)
+Mathias = Mabr/ Test1234 (Chef)
+Preben = Preben/Test1234 (Lager)
